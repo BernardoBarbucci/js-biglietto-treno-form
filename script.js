@@ -10,9 +10,9 @@
 
 function calculateTicketCost() {
     let userKmRequest = parseFloat (document.getElementById('kmRequest'));
-    let userAge = parseFloat (document.getElementById('ageRequest'));
+    let userAge = parseFloat (document.getElementById('userAge'));
 
-    //  STEP_1  verfica se è un numero +  quanto costa il viaggio in € in base a 'userKmRequest'?
+    //  STEP_1  verifica se è un numero +  quanto costa il viaggio in € in base a 'userKmRequest'?
 
     if (!isNaN(userKmRequest) && !isNaN(userAge)) {
         let ticketPrice = userKmRequest * 0.1976;
@@ -25,9 +25,12 @@ function calculateTicketCost() {
             ticketPrice *= 0.4673;
         }
 
-    // STEP_3 printing del risultato
+    // STEP_3 printing del risultato su CONSOLE
     console.log('Your ticket cost is: ' + ticketPrice.toFixed(2) + '€');
+    // ora su HTML
+    document.getElementById('result').textContent = 'Your ticket cost is: ' + ticketPrice.toFixed(2) + '€';
     } else {
         console.log('Please enter valid numbers.');
+        document.getElementById('result').textContent = 'Please enter valid numbers.';
     }
 }

@@ -4,3 +4,11 @@
     padding: 0;
     border: border-box;
 }
+#result{
+    margin: 2rem auto 2rem;
+    text-align: center;
+    height: 2rem;
+    width: 20rem;
+    background-color: beige;
+    border: 2px red solid;
+}
