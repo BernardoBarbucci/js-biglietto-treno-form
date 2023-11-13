@@ -4,6 +4,50 @@
     padding: 0;
     border: border-box;
 }
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(135deg,  #000, #790000fa);;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border: 2px beige solid;
+    color: white;
+}
+.card > h1{
+    font-size: 2.3rem;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.km{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.age{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.print{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
 #result{
     margin: 2rem auto 2rem;
     text-align: center;
@@ -11,4 +55,9 @@
     width: 20rem;
     background-color: beige;
     border: 2px red solid;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    vertical-align: auto;
 }
