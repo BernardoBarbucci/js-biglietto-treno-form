@@ -9,20 +9,20 @@
 
 
 
-let userKmRequest = parseInt (prompt('How many Km are you going to travel?'));
-let userAge = parseInt (prompt('How old are you?'));
+let userKmRequest = parseFloat (prompt('How many Km are you going to travel?'));
+let userAge = parseFloat (prompt('How old are you?'));
 
 //  STEP_1  verfica se è un numero +  quanto costa il viaggio in € in base a 'userKmRequest'?
 
 if (!isNaN(userKmRequest) && !isNaN(userAge)) {
-    let ticketPrice = userKmRequest * 0.21;
+    let ticketPrice = userKmRequest * 0.1976;
 
     // STEP_2 sconto = calcola direttamente il risultato senza dover fare la sottrazione
     if (userAge < 18) {
-        ticketPrice *= 0.8;
+        ticketPrice *= 0.8235;
     }
     else if (userAge >= 65) {
-        ticketPrice *= 0.6;
+        ticketPrice *= 0.4673;
     }
 
 // STEP_3 printing del risultato
