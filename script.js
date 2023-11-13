@@ -9,8 +9,8 @@
 
 
 function calculateTicketCost() {
-    let userKmRequest = parseFloat (document.getElementById('kmRequest'));
-    let userAge = parseFloat (document.getElementById('userAge'));
+    let userKmRequest = parseFloat (document.getElementById('kmRequest').value);
+    let userAge = parseFloat (document.getElementById('userAge').value);
 
     //  STEP_1  verifica se è un numero +  quanto costa il viaggio in € in base a 'userKmRequest'?
 
